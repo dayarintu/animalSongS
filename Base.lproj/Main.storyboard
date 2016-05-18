@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animalSongS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mPJ-ru-nFb">
+                                <rect key="frame" x="-2" y="11" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-YU-mJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIV-UO-iHd">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="200"/>
+                                                <state key="normal" image="cat"/>
+                                                <connections>
+                                                    <action selector="catPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVx-hl-g0u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-Bs-3mN">
+                                                <rect key="frame" x="201" y="0.0" width="186" height="200"/>
+                                                <state key="normal" image="cow"/>
+                                                <connections>
+                                                    <action selector="cowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJs-Df-Xji"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z08-Fr-Ohw">
+                                                <rect key="frame" x="407" y="0.0" width="193" height="200"/>
+                                                <state key="normal" image="dog"/>
+                                                <connections>
+                                                    <action selector="dogPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTx-Ff-yMX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-2L-vpw">
+                                        <rect key="frame" x="0.0" y="200" width="582" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1j-NN-Ud6">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="200"/>
+                                                <state key="normal" image="frog"/>
+                                                <connections>
+                                                    <action selector="frogPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbk-YY-Sb3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8g-UQ-Yqa">
+                                                <rect key="frame" x="187" y="0.0" width="165" height="200"/>
+                                                <state key="normal" image="hen"/>
+                                                <connections>
+                                                    <action selector="roosterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcH-0e-qzh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rci-hf-QdM">
+                                                <rect key="frame" x="372" y="0.0" width="210" height="200"/>
+                                                <state key="normal" image="horse"/>
+                                                <connections>
+                                                    <action selector="horsePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlO-dh-7zA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Bx-Iy-bT2">
+                                        <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye0-qe-muW">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="200"/>
+                                                <state key="normal" image="lion"/>
+                                                <connections>
+                                                    <action selector="lionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aq9-MM-X9r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-Uy-gbE">
+                                                <rect key="frame" x="210" y="0.0" width="205" height="200"/>
+                                                <state key="normal" image="parrot"/>
+                                                <connections>
+                                                    <action selector="parrotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akf-0q-S0Z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-Iq-wmM">
+                                                <rect key="frame" x="435" y="0.0" width="165" height="200"/>
+                                                <state key="normal" image="peacock"/>
+                                                <connections>
+                                                    <action selector="peacockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcM-vM-d0R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Bx-Iy-bT2" firstAttribute="height" secondItem="TK4-2L-vpw" secondAttribute="height" id="p3K-9E-wtN"/>
+                                    <constraint firstItem="TK4-2L-vpw" firstAttribute="height" secondItem="l1p-YU-mJd" secondAttribute="height" id="psQ-LJ-pH6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mPJ-ru-nFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WaS-gF-VPw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mPJ-ru-nFb" secondAttribute="bottom" id="fRP-5C-DiQ"/>
+                            <constraint firstItem="mPJ-ru-nFb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nkF-UL-pbR"/>
+                            <constraint firstAttribute="trailing" secondItem="mPJ-ru-nFb" secondAttribute="trailing" id="oNu-o6-L0e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="195" height="159"/>
+        <image name="cow" width="200" height="152"/>
+        <image name="dog" width="210" height="177"/>
+        <image name="frog" width="167" height="170"/>
+        <image name="hen" width="165" height="195"/>
+        <image name="horse" width="210" height="153"/>
+        <image name="lion" width="195" height="159"/>
+        <image name="parrot" width="210" height="153"/>
+        <image name="peacock" width="170" height="169"/>
+    </resources>
+</document>
